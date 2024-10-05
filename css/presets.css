@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* 
+--- TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 144
+*/
+
+/********************
+Default Presets
+*********************/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color for subheadings */
+  --color-subheading: #00518a;
+
+  /* Dark blue color for titles and icons */
+  --color-title: #00253f;
+  --dark-blue: #00253f;
+  --color-icon: #00253f;
+
+  /* Light blue for icon backgrounds, buttons, and highlights */
+  --color-background-icon: #a3d9ff;
+  --color-background-button: #a3d9ff;
+  --color-highlight: #a3d9ff;
+
+  /* Hover for light blue */
+  --color-hover-light-blue: #82aecc;
+
+  /* Hover for dark blue */
+  --color-hover-dark-blue: #4d6679;
+
+  /* Main text color */
+  --color-text: #505050;
+  --color-text-secondary: #d9d9d9;
+
+  /* Negative highlight color */
+  --color-negative: #f20000;
+
+  /* White color */
+  --color-white: #ffffff;
+
+  /* Secondary white color */
+  --color-white-secondary: #f7f8fa;
+}
+
+/********************
+HTML and BODY Presets
+*********************/
+html {
+  /* 10px ÷ 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+
+  color: var(--color-title);
+  background-color: var(--color-white);
+}
+
+/********************
+Container
+*********************/
+.container {
+  /* Max Width 1400px */
+  max-width: 140rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+/********************
+Margin Bottom
+*********************/
+.mb--2rem {
+  margin-bottom: 2rem;
+}
+
+.mb--4rem {
+  margin-bottom: 4rem;
+}
+
+.mb--8rem {
+  margin-bottom: 8rem;
+}
+
+/********************
+Subheading
+*********************/
+.subheading {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+
+  color: var(--color-subheading);
+  text-transform: uppercase;
+}
+
+/********************
+Small Button
+*********************/
+.small-btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  font-family: "DM Sans", sans-serif;
+
+  border-radius: 4rem;
+  padding: 1.8rem 6rem;
+
+  display: inline-flex;
+  align-items: center;
+
+  color: var(--dark-blue);
+  background-color: var(--color-highlight);
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.small-btn:hover {
+  background-color: var(--color-hover-light-blue);
+}
+
+.small-btn:hover i {
+  transform: translateX(0.5rem);
+}
+
+.right-arrow {
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+
+  transition: transform 0.3s ease;
+}
