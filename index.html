@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.png"
+      type="image/x-icon"
+    />
+
     <!-- Script Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
@@ -79,7 +85,7 @@
               <div class="profile-card">
                 <div class="profile-image">
                   <img
-                    src="img/josiel-valtur-ceo.png"
+                    src="img/social-img/josiel-valtur-ceo.png"
                     alt="Josiel Valtur, CEO"
                   />
                 </div>
@@ -185,7 +191,7 @@
               <div class="testimonials-card-box">
                 <div class="testimonials-card">
                   <div class="user-img">
-                    <img src="img/client1.png" alt="" />
+                    <img src="img/clients/client1.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -193,7 +199,7 @@
               <div class="testimonials-card-box">
                 <div class="testimonials-card">
                   <div class="user-img">
-                    <img src="img/client1.png" alt="" />
+                    <img src="img/clients/client1.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -201,7 +207,7 @@
               <div class="testimonials-card-box">
                 <div class="testimonials-card">
                   <div class="user-img">
-                    <img src="img/client1.png" alt="" />
+                    <img src="img/clients/client1.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -209,7 +215,7 @@
               <div class="testimonials-card-box">
                 <div class="testimonials-card">
                   <div class="user-img">
-                    <img src="img/client1.png" alt="" />
+                    <img src="img/clients/client1.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -223,7 +229,7 @@
         <div class="container">
           <div class="about-content">
             <div class="about-img">
-              <img src="img/client2.png" alt="" />
+              <img src="img/social-img/phone.png" alt="" />
             </div>
 
             <div class="about-text">
@@ -271,7 +277,7 @@
         <div class="container">
           <div class="moment-content">
             <div class="moment-img">
-              <img class="magazine" src="img/magazine.png" alt="" />
+              <img class="magazine" src="img/social-img/magazine.png" alt="" />
             </div>
 
             <div class="moment-card-container">
@@ -399,58 +405,86 @@
             </div>
 
             <div class="be-innovative-img">
-              <img src="img/team.png" alt="" />
+              <img src="img/social-img/team.png" alt="" />
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <div class="contact">
+        <div class="container">
+          <div class="contact-text mb--4rem">
+            <h2 class="contact-title mb--8rem">
+              Tenha uma reunião exclusiva para <br />entender ainda mais sobre
+              a<br />
+              <span class="contact-highlight">Inovação Comercial!</span>
+            </h2>
+          </div>
+
+          <!-- Form -->
+          <form class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Coloque seu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Seu melhor E-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-input"
+                placeholder="Seu Telefone"
+                maxlength="13"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-full">
+              Quero transformar meu negócio!
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
 
-    <!-- Footer/Contact Section -->
-    <div class="contact">
+    <footer class="footer">
       <div class="container">
-        <div class="contact-text mb--4rem">
-          <h2 class="contact-title mb--8rem">
-            Tenha uma reunião exclusiva para <br />entender ainda mais sobre
-            a<br />
-            <span class="contact-highlight">Inovação Comercial!</span>
-          </h2>
-        </div>
+        <div class="footer-content">
+          <div class="footer-social">
+            <a
+              href="https://www.google.com.br/maps/place/Inova%C3%A7%C3%A3o+Comercial/@-29.9281771,-51.1701939,17z/data=!3m1!4b1!4m6!3m5!1s0x95197076c7549ddf:0xca760bdfb8928a45!8m2!3d-29.9281771!4d-51.1701939!16s%2Fg%2F11bxf_5p90?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw"
+              target="_blank"
+              ><i class="ph ph-map-pin icon-footer"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/inovacaocomercial/"
+              target="_blank"
+              ><i class="ph ph-instagram-logo icon-footer"></i
+            ></a>
+            <a href="https://www.facebook.com/inovacaocomercial" target="_blank"
+              ><i class="ph ph-facebook-logo icon-footer"></i
+            ></a>
+          </div>
 
-        <!-- Form -->
-        <form class="contact-form">
-          <div class="form-group">
-            <input
-              type="text"
-              class="form-input"
-              placeholder="Coloque seu nome"
-              required
-            />
+          <div class="footer-copyright">
+            <p class="copyright">
+              &copy; 2024 Inovação Comercial. Todos os direitos reservados.
+            </p>
           </div>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-input"
-              placeholder="Seu melhor E-mail"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="tel"
-              class="form-input"
-              placeholder="Seu Telefone"
-              maxlength="13"
-              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
-              required
-            />
-          </div>
-          <button type="submit" class="btn-full">
-            Quero transformar meu negócio!
-          </button>
-        </form>
+        </div>
       </div>
-    </div>
+    </footer>
 
     <!-- Scripts JS -->
     <script src="javascript/typing-phrase.js"></script>

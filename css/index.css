@@ -282,7 +282,7 @@ About Section
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/img/about-background.png");
+  background-image: url("/img/backgrounds/about-background.png");
 }
 
 .about-content {
@@ -290,6 +290,10 @@ About Section
   align-items: center;
 
   gap: 12rem;
+}
+
+.about-img img {
+  width: 50rem;
 }
 
 .about-text {
@@ -547,7 +551,7 @@ Contact Section
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/contact-background.png);
+  background-image: url(/img/backgrounds/contact-background.png);
 }
 
 .contact-text {
@@ -627,4 +631,43 @@ Contact Form
 
 .btn-full:hover {
   background-color: var(--color-hover-light-blue);
+}
+
+/********************
+Footer
+*********************/
+.footer {
+  padding: 8rem 0;
+  background-color: var(--dark-blue);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+
+  gap: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+
+  border-bottom: 1px solid var(--color-subheading);
+}
+
+.icon-footer {
+  font-size: 5rem;
+  color: var(--color-white);
+  transition: 0.3s ease;
+}
+
+.icon-footer:hover {
+  color: var(--color-highlight);
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-white);
 }
